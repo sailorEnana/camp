@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Login from '../src/components/login';
+import Login from './components/Login';
 import './App.css';
-import LoginButton from './components/login/LoginButton';
 
 function App() {
   return (

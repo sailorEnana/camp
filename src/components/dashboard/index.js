@@ -1,6 +1,6 @@
 import React from "react";
 
-function index() {
+function Index() {
     return(
         <div>
             <h2>Hola soy el dashboard</h2>
@@ -8,4 +8,4 @@ function index() {
     );
 }
 
-return default index;
+export default Index;

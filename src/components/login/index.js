@@ -1,15 +1,22 @@
-import React from 'react';
 import './styles.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Grid } from '@mui/material';
 import { TextField } from '@mui/material';
-import LoginButton from './LoginButton';
+import { useHistory } from "react-router-dom";
+import { Button } from '@mui/material';
 
 
 
 
 
-const index = () => {
+
+const Index = () => {
+
+    let history= useHistory();
+    function handleClick() {
+        //history.push("/dashboard");
+      }
+    
     return (
         <div className="">
             <Grid
@@ -26,7 +33,7 @@ const index = () => {
                     <TextField color="secondary" id="outlined-basic" type="password" label="Contraseña" variant="standard" />
                 </Grid>
                 <Grid item xs={12}>
-                    <LoginButton/>
+                    <Button variant='contained' color='secondary' onClick={handleClick}>Iniciar Sesión</Button>
                 </Grid>
 
             </Grid>
@@ -34,4 +41,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default Index;
